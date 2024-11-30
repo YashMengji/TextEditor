@@ -1,8 +1,17 @@
 const addTextBtn = document.querySelector(".div-add-text-btn");
 const canvas = document.querySelector(".div-canvas");
+const btnText = document.querySelector(".div-add-text-btn-text")
 const canvasRect = canvas.getBoundingClientRect();
 
 addTextBtn.addEventListener("click", (e) => {
+  if(btnText.textContent === "Remove Text") {
+    const text = document.querySelector(".text-field");
+    text.remove();
+    btnText.textContent = "Add Text";
+    return;
+  }
+  btnText.textContent = "Remove Text";
+
   const text = document.createElement("p");
   text.textContent = "This is a new text";
   text.style.position = "absolute";
@@ -10,9 +19,11 @@ addTextBtn.addEventListener("click", (e) => {
   text.style.top =  "50%"
   text.style.width = "fit-content"; 
   text.style.height = "fit-content";
-  text.className = 'paragraph-field';
+  text.className = 'text-field';
   text.style.userSelect = "none";
   canvas.appendChild(text);
+
+
 
   text.addEventListener("mousedown", (e) => {
     e.preventDefault();
