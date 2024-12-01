@@ -1,6 +1,6 @@
-export const canvas = document.querySelector(".div-canvas");
-export const undoStack = [];
-export const redoStack = [];
+const canvas = document.querySelector(".div-canvas");
+const undoStack = [];
+const redoStack = [];
 
 // ADD TEXT --------------------------------------
 const addTextBtn = document.querySelector(".div-add-text-btn");
