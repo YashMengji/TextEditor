@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
   <link rel="stylesheet" href="/styles/general.css">
   <link rel="stylesheet" href="/styles/display.css">
@@ -36,9 +37,9 @@
 
     </div>
     <div class="div-text-edit-btn">
-      <div class="div-font-family">
+      <div class="div-font-family"> 
         <select name="" id="font-family">
-          <option value="null">Font family</option>
+          <option value="QuickSand">Font family</option>
           <option value="Arial">Arial</option>
           <option value="Roboto">Roboto</option>
           <option value="Lexend">Lexend</option>
@@ -49,7 +50,7 @@
         <div class="div-font-size-decrement">
           <i class="fa-solid fa-minus "></i>
         </div>
-        <input type="number" min="0" class="font-size-input" value="16">
+        <input name="font-size-name" type="number" min="0" class="font-size-input" value="16">
         <div class="div-font-size-increment">
           <i class="fa-solid fa-plus"></i>
         </div>
@@ -75,6 +76,5 @@
     </div>
   </div>
 </body>
-<script src="./scripts/addText.js"></script>
-<script src="./scripts/textProperty.js"></script>
+<script src="./scripts/general.js"></script>
 </html>
